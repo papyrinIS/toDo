@@ -15,24 +15,6 @@
   ],
   "tasks": [
     {
-      "listId": 1,
-      "text": "useEffect 26.05",
-      "id": 1,
-      "description": [
-        null
-      ]
-    },
-    {
-      "listId": 1,
-      "text": "залить на гитхаб 27.05",
-      "id": 12
-    },
-    {
-      "listId": 1,
-      "text": "деструктуризация 27.05",
-      "id": 17
-    },
-    {
       "listId": 2,
       "text": "1",
       "id": 18,
@@ -111,11 +93,6 @@
       "listId": 4,
       "text": "6",
       "id": 37
-    },
-    {
-      "listId": 1,
-      "text": "видео про асинхронные запросы",
-      "id": 38
     }
   ],
   "subTask": [
@@ -148,24 +125,6 @@
       "check": "5",
       "complete": false,
       "id": 8
-    },
-    {
-      "taskId": 1,
-      "check": "read the article",
-      "complete": false,
-      "id": 10
-    },
-    {
-      "taskId": 12,
-      "check": "complete",
-      "complete": false,
-      "id": 14
-    },
-    {
-      "taskId": 17,
-      "check": "complete",
-      "complete": false,
-      "id": 15
     },
     {
       "taskId": 18,
