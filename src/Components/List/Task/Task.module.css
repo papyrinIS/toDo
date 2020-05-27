@@ -1,0 +1,242 @@
+.task{
+
+    width: 315px;
+    min-height: 30px;
+    background: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 3px;
+    display: flex;
+    position: relative;
+
+
+}
+.taskTitle{
+    top:7.5px;
+    position: static;
+    left:10px;
+    cursor: pointer;
+}
+
+.taskName{
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    display: flex;
+    width: 250px;
+    margin-top:4px;
+    margin-left: 10px;
+}
+
+.editIcon{
+    left:270px;
+    top:5px;
+    position: absolute;
+    width: 14px;
+    cursor: pointer;
+    padding: 5px;
+    transition: all 50ms ease;
+    opacity: 0;
+
+}
+.task:hover .editIcon{
+    opacity: 1;
+    transition: 0.7s;
+}
+.editIcon:hover{
+    border-radius: 5px;
+    background: #ebecf0;
+}
+.closeIcon{
+    border: 1px;
+    width: 23px;
+    left:292px;
+    top:5px;
+    position: absolute;
+    cursor: pointer;
+    transition: all 70ms ease;
+    opacity: 0;
+}
+.task:hover .closeIcon{
+    opacity: 1;
+    transition: 0.7s;
+}
+.closeIcon:hover{
+    border-radius: 5px;
+    background: #ebecf0;
+}
+
+
+
+.editTask input{
+    width: 305px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 5px;
+    outline: none !important;
+    border: 2px solid #000000;
+    background:#ffffff;
+    margin-top: 9px;
+    padding-left: 5px;
+}
+
+.editTask button{
+    outline: none !important;
+    height: 40px;
+    background: #4bbf6b;
+    border-radius: 7px;
+    border-style: solid;
+    font-size: 15px;
+    color:#ffffff;
+    margin:2px 5px 0px -2px;
+    cursor: pointer;
+    transition: all 50ms ease;
+}
+
+.editTask  button:hover{
+    background: #76ce8e;
+
+}
+
+.comleteTitle{
+    position: relative;
+    left:30px;
+
+}
+.comleteTitle img{
+position: absolute;
+    top:-1px;
+left:-19px;
+    height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+.modal {
+    position: fixed;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 3px;
+    z-index:2;
+}
+
+.modalWrapper {
+    position:fixed;
+    top:0px;
+    left: 0px;
+    display:flex;
+    width:100%;
+    height:100%;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,.7);
+    z-index:100;
+}
+
+.overlay {
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:1;
+}
+
+
+
+
+@media screen and (max-width:1024px){
+    .task{
+        width: 720px;
+    }
+    .taskName{
+        width: 550px;
+    }
+    .headerList {
+        width: 200px;
+        height: 100px;
+        font-size: 45px;
+    }
+    .closeIcon{
+        left: 650px;
+        top:10px;
+        opacity: 1;
+        width: 75px;
+    }
+    .editIcon{
+        left:600px;
+        top:15px;
+        opacity: 1;
+        width: 50px;
+    }
+
+    .comleteTitle{
+        left: 70px;
+    }
+    .comleteTitle img{
+        height: 50px;
+        left: -50px;
+    }
+    .editTask input{
+        width: 685px;
+        height: 100px;
+        border-radius: 10px;
+        outline: none !important;
+        border: 2px solid #000000;
+        background:#ffffff;
+        margin-top: 9px;
+        padding-left: 10px;
+        margin-left: 10px;
+        font-size: 50px;
+
+    }
+    .editTask button{
+        font-size: 40px;
+        height: 100px;
+        border-radius: 20px;
+        margin: 10px;
+    }
+}
+
+
+@media screen and (max-width:450px) and (max-height: 812px){
+    .task{
+        width: 337px;
+    }
+    .taskName{
+        width: 270px;
+    }
+    .closeIcon{
+        left: 310px;
+        top:5px;
+        width: 35px;
+    }
+    .editIcon{
+        left:280px;
+        top:5px;
+        width: 25px;
+    }
+    .editTask input{
+        width: 300px;
+        height: 30px;
+        font-size: 25px;
+    }
+    .comleteTitle{
+        left: 50px;
+    }
+    .comleteTitle img{
+        height: 30px;
+        left: -30px;
+    }
+    .editTask button{
+        font-size: 25px;
+        height: 50px;
+        border-radius: 10px;
+        margin: 5px;
+    }
+}

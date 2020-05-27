@@ -1,0 +1,39 @@
+
+.addTaskButtons button{
+    outline: none !important;
+    height: 40px;
+    background: #4bbf6b;
+    border-radius: 7px;
+    border-style: solid;
+    font-size: 15px;
+    color:#ffffff;
+    margin:2px 5px 0px -2px;
+    cursor: pointer;
+    transition: all 50ms ease;
+}
+.addTaskButtons button:hover{
+    background: #76ce8e;
+
+}
+
+@media screen and (max-width:1024px){
+    .addTaskButtons button{
+        font-size: 40px;
+        height: 100px;
+        border-radius: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding:0px 15px 0px 15px;
+    }
+}
+@media screen and (max-width:450px){
+    .addTaskButtons button {
+        font-size: 25px;
+        height: 50px;
+        border-radius: 10px;
+        margin-right: -2px;
+        margin-left: 5px;
+        margin-top: -3px;
+        padding: 0px 5px 0px 5px;
+    }
+}

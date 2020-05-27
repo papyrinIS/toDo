@@ -1,0 +1,135 @@
+.list{
+    background: #ebecf0;
+    width:340px;
+    margin: 10px 10px 10px 0px ;
+    min-height: 104px;
+    display: inline-block;
+    float:left;
+    border-radius: 5px;
+
+    position: relative;
+    text-align: left;
+}
+
+.headerList span{
+    margin-top: 5px;
+    padding-left: 15px;
+}
+.headerList{
+    padding-left: 5px;
+    padding-top: 10px;
+    height: 25px;
+    position: relative;
+    text-align: left;
+    width: 280px;
+    margin: 2px;
+
+
+}
+.deleteList img {
+    height: 30px;
+    position: absolute;
+    left:308px;
+    top:2px;
+    cursor: pointer;
+}
+
+.bodyList{
+    display: block;
+    position: relative;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+
+.headerList input{
+    outline: none !important;
+    font-size: 15px;
+    border-style: solid;
+    width: 245px;
+    border-radius: 5px;
+    padding-left: 5px;
+    height: 27px;
+    margin-left: 5px;
+}
+
+
+
+.newTask{
+    margin: 10px 0px 5px 10px;
+    padding-top: 7px;
+    padding-left: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    height: 28px;
+    width: 250px;
+    background: #ebecf0;
+    transition: all 50ms ease;
+}
+
+.newTask:hover {
+    background: #d5d7df;
+
+
+}
+.newTask img{
+    height: 22px;
+    position: relative;
+    top:-3px;
+
+}
+
+
+
+@media screen and (max-width:1024px){
+    .list{
+        margin: 20px 20px 20px 0px;
+        width: 750px;
+    }
+    .headerList {
+        width: 200px;
+        height: 100px;
+        font-size: 45px;
+    }
+    .deleteList img {
+       left: 680px;
+        height: 70px;
+    }
+    .newTask{
+        height: 100px;
+        width: 600px;
+    }
+    .newTask img{
+        height: 50px;
+    }
+}
+
+
+@media screen and (max-width:375px){
+    .list{
+        width: 365px;
+        margin: 10px 10px 10px 0px;
+    }
+    .headerList{
+        width: 150px;
+        font-size: 35px;
+        height: 50px;
+    }
+    .deleteList img {
+        left: 320px;
+        height: 40px;
+    }
+    .newTask{
+        height: 70px;
+        width: 300px;
+        background: white;
+        border-radius: 10px;
+    }
+    .newTask img{
+        height: 50px;
+    }
+}
+
+
+

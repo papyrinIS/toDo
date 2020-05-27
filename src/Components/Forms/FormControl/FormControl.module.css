@@ -1,0 +1,35 @@
+.field {
+    width: 312px;
+    height: 60px;
+    font-size: 15px;
+    border-radius: 5px;
+    outline: none !important;
+    border: 2px solid #000000;
+    background:#ffffff;
+    margin-top: 9px;
+
+}
+.validate{
+    color:red;
+}
+
+
+@media screen and (max-width:1024px){
+    .field{
+        height: 80px;
+        width: 615px;
+        font-size: 40px;
+        margin: 20px 10px 0px 10px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .field{
+        height: 40px;
+        width: 315px;
+        font-size: 25px;
+        margin: 10px 5px 0px 5px;
+        border-radius: 10px;
+    }
+}
