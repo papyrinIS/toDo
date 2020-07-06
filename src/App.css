@@ -4,7 +4,7 @@
   text-align: center;
   display: inline-block;
   background-color: #4bbf6b;
-height: 2000px;
+min-height: 725px;
   min-width: 1526px;
   width: max-content;
   position: relative;
@@ -21,7 +21,7 @@ height: 2000px;
   align-items: center;
   justify-content: center;
   margin-left: -10px;
-  min-width: 1580px;
+  min-width: 1509px;
   color: white;
 }
 .header img {
@@ -31,7 +31,7 @@ height: 2000px;
 
 .addList{
   cursor: pointer;
-  margin: 10px 41px 0px 0px;
+  margin: 10px 1px 0 0;
   border-radius: 5px;
   display: flex;
   height: 35px;

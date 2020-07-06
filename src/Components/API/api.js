@@ -14,7 +14,6 @@ export const listAPI = {
 
     addList(name){
         return instance.post(`lists/`,{name:name}).then(response =>{
-            console.log(response.data);
             return response.data;
 
         })

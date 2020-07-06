@@ -2,7 +2,7 @@ import React from "react";
 import {connect} from "react-redux";
 import {
     deleteSubTaskThunkCreator,
-    updateCheckThunkCreator
+    initializeSubTask
 } from "../../../../Redux/AppReduser";
 import SubTask from "./SubTask";
 
@@ -13,7 +13,7 @@ const SubTaskContainers = (props) => {
     }
 
     const updateCheck = (id,checkbox)=>{
-        props.updateCheckThunkCreator(id,checkbox);
+        props.initializeSubTask(id,checkbox);
     }
 
     return<SubTask updateCheck={updateCheck}
@@ -28,4 +28,4 @@ const mapStateToProps =(state) => {
     }
 }
 
-export default connect(mapStateToProps,{deleteSubTaskThunkCreator,updateCheckThunkCreator})(SubTaskContainers)
+export default connect(mapStateToProps,{deleteSubTaskThunkCreator,initializeSubTask})(SubTaskContainers)

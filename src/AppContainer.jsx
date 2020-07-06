@@ -35,7 +35,7 @@ const AppContainers =(props) => {
             props.setSubTaskThunkCreator();
             setRenderTasks(true);
         }
-    },[ props]);
+    },[props.setTasksThunkCreator,props.setSubTaskThunkCreator,renderTasks, props]);
 
 
     useEffect(()=> {
@@ -44,7 +44,7 @@ const AppContainers =(props) => {
             props.setListsThunkCreator();
             setRenderLists(true)
         }
-    },[ props]);
+    },[props.setListsThunkCreator,renderLists, props]);
 
 
 

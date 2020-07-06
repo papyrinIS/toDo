@@ -207,6 +207,21 @@ export const updateCheckThunkCreator = (id,complete)=> async (dispatch)=> {
     let data= await subTaskAPI.updateCheck(id,complete);
         dispatch(updateCheck(data));
 }
+export const initializeSubTask = (id,checkbox) => (dispatch) => {
+    let promise = dispatch(updateCheckThunkCreator(id,checkbox));
 
+    Promise.all([promise])
+        .then(() => {
+            dispatch(setSubTaskThunkCreator());
+        });
+}
+export const initializeTask = (id,text) => (dispatch) => {
+    let promise = dispatch(addTaskThunkCreator(id,text));
+
+    Promise.all([promise])
+        .then(() => {
+            dispatch(setTasksThunkCreator());
+        });
+}
 
 export default AppReduser;

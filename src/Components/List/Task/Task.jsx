@@ -50,10 +50,12 @@ const subTaskAll = props.App.subTask.filter(a=>props.id===a.taskId).length
     return<div className={styles.task}>
 
                 {editMode &&
-                    <div>
+                    <div >
                         <span className={styles.taskTitle} >
-                            <span className={styles.taskName} onClick={()=>setBigForm(false)}> {taskName}</span>
+                            <span onClick={()=>setBigForm(false)}>
+                            <span className={styles.taskName} > {taskName}</span>
                             <div className={styles.comleteTitle}><img alt="complete" src={complete}/>{subTaskComplete}/{subTaskAll}</div>
+                        </span>
                       <img alt = "edit" className={styles.editIcon}  onClick={activateEditMode} src={edit}/>
                             <img alt = "close" className={styles.closeIcon} onClick={()=>props.DeleteTask(props.id)} src={close}/>
                         </span>

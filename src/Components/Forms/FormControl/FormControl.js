@@ -10,6 +10,7 @@ export const CreateField = (placeholder,name,validate,component, props={} ,text 
                validate = {validate}
                component = {component}
                { ...props}
+
         /> {text}
     </div>
 )

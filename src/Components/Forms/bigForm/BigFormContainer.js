@@ -25,7 +25,7 @@ const BigFormContainers =(props) => {
             props.setSubTaskThunkCreator();
             setRenderSubTask(true)
         }
-    },[props])
+    },[props.setSubTaskThunkCreator,renderSubTask,props])
 
     const [renderTask,setRenderTask] = useState(false)
     useEffect(()=>{
@@ -33,7 +33,7 @@ const BigFormContainers =(props) => {
             props.setTasksThunkCreator();
             setRenderTask(true)
         }
-    },[props])
+    },[props.setTasksThunkCreator,renderTask,props])
 
     let UpdateDescription = (id,Description) => {
         props.updateDescriptionThunkCreator(id,Description);

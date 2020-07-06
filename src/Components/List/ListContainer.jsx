@@ -1,7 +1,7 @@
 import {connect} from "react-redux";
 import {
     addNewTask,
-    addTaskThunkCreator,
+    initializeTask,
     deleteList,
     deleteListThunkCreator,
     editNameList,
@@ -23,7 +23,7 @@ const ListContainers = (props) => {
     }
 
     const addNewTask = (value) => {
-        props.addTaskThunkCreator(props.id,value.text);
+        props.initializeTask(props.id,value.text);
         props.newTask();
     }
 
@@ -45,4 +45,4 @@ let mapStateToProps =(state) => {
 }}
 
 
-export default connect(mapStateToProps,{setTasks,deleteList,addNewTask,editNameList, addTaskThunkCreator,deleteListThunkCreator, updateNameListThunkCreator })(ListContainers)
+export default connect(mapStateToProps,{setTasks,deleteList,addNewTask,editNameList, initializeTask,deleteListThunkCreator, updateNameListThunkCreator })(ListContainers)
