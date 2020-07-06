@@ -1,8 +1,8 @@
 Для запуска приложения нужно запустить проект и фейковый сервер :
 
-yarn fake-json 
+##yarn fake-json 
 
-yarn start
+##yarn start
 
 
 
